@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class TestClass {
 
@@ -23,7 +24,7 @@ public class TestClass {
 	public static void main(String[] args) throws IOException {
 		
 		
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new SafariDriver();
 		
 		driver.manage().window().maximize();
 		
