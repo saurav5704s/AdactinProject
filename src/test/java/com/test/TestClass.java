@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -26,6 +27,7 @@ public class TestClass {
 		WebDriver driver = new EdgeDriver();
 		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
 		
 		driver.get("https://www.facebook.com/");
 		
